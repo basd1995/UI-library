@@ -1,0 +1,48 @@
+.button{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.b-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin: 0 8px;
+  /* border: 1px solid #000; */
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.steal {
+  color: #fff;
+  background: #009688
+}
+
+.yellow {
+  color: #000;
+  background: #ffeb3b;
+}
+
+.orange {
+  color: #000;
+  background: #ff9800;
+}
+
+.red {
+  color: #fff;
+  background: #f44336;
+}
+
+.green {
+  color: #fff;
+  background: #4CAF50;
+}
+
+/* 伪类 */
+
+.b-button:hover {
+  transform: scale(1.05);
+  /* transition: all 0.3s; */
+  -webkit-box-shadow: 0 5px 20px #888;
+  box-shadow: 0 5px 20px #888;
+}
