@@ -1,66 +1,52 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
-    background-color: #38385a;
+    background: #38385a;
 }
 
-.nav{
-    margin: 0 auto;
-    height: 35px;
-    width: 500px;
-}
-
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.nav ul .main-nav ,
-.nav ul .content{
-/*    position: relative;*/
-    float: left;
-    
-}
-
-.nav ul .content{
-    margin-top: 20px;
-}
-
-.nav ul a{
-    display: block;
-    height: 35px;
-    line-height: 35px;
-    border: 1px solid #fff;
-/*    border-radius: 5px;*/
-    width: 99px;
-    text-align: center;
-    text-decoration: none;
+a{
     color: #fff;
-    font-size: 14px
+    text-decoration: none;
 }
 
-.nav ul #first{
-    border-radius: 7px 0 0 7px / 7px 0 0 7px;
-}
-.nav ul #last{
-    border-radius: 0 7px 7px 0 / 0 7px 7px 0;
-}
-.nav ul #mid{
-    width: 80px
+nav {
+    padding: 20px;
 }
 
-.nav ul .main-nav .content {
-    display: none;
+.topbar {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.nav ul .main-nav:hover .content{
-    display: block;
+.topbar .info {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 25px;
+    border: .06em solid #fff;
+    border-right: none;
+    font-size: 14px;
+    transition: all .5s;
 }
 
-.main-nav span {
+.topbar .info a {
+    color: #fff;
+    transition: all .5s;
+}
+
+
+
+.topbar .info:first-child{
+    border-radius: 7px 0 0 7px;
+}
+
+.topbar .info:last-child{
+    border-right: .06em solid #fff;
+    border-radius:0 7px 7px 0;
+}
+
+span {
     display: inline-block;
     width: 0;
     height: 0;
@@ -72,11 +58,46 @@ body{
 }
 
 
+.topbar .show {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 20px;
+    
+}
+.topbar .show a {
+    padding: 8px 0;
+    width: 92px;
+    display: block;
+    white-space: wrap;
+    border: .06em solid #fff;
+    border-bottom: none;
+    transition: all .5s;
+}
 
+.topbar .show a:last-child {
+    border-bottom: .06em solid #fff;
+}
 
+.topbar .info:hover {
+    background: #fff;
+}
+.topbar .info:hover >a {
+    color: #000;
+}
 
+.topbar .info:hover span {
+    border-color: #000 transparent transparent;
+}
+.topbar .info:hover .show {
+    display: block;
+}
 
-
+.topbar .info .show a:hover {
+    background: #fff;
+    color: #000;
+}
 
 
 
