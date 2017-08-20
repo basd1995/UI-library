@@ -1,0 +1,45 @@
+.dash {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	border: 1px solid red;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.border {
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(to bottom,#bbb,#000 40%);
+	border-radius: 50%;
+}
+.border:before {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	content: '';
+	display: block;
+	width: 420px;
+	height: 420px;
+	background: #eee;
+	border-radius: 50%;
+}
+.border:after {
+	position: absolute;
+	top: 260px;
+	left: 40px;
+	content: '';
+	display: block;
+	width: 420px;
+	height: 40px;
+	background: linear-gradient(to right,#000,#555,#000);
+}
+.bar {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	width: 380px;
+	height: 180px;
+	border-radius: 180px 180px 0 0;
+	background: red;
+}

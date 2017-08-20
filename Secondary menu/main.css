@@ -59,7 +59,7 @@ span {
 
 
 .topbar .show {
-    display: none;
+    display: block;
     position: absolute;
     width: 100%;
     top: 100%;
