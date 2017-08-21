@@ -1,0 +1,45 @@
+h1,h2,h3,a,ul,li,p{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+.mask {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5)
+}
+
+.mask-ctn {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.mask-ctn header h3 {
+	padding: 10px 0;
+	display: inline-block;
+}
+.mask-ctn header a{
+	float: right;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.mask-ctn section p{
+	padding: 10px 0;
+}
+.open{
+	display: block;
+}
